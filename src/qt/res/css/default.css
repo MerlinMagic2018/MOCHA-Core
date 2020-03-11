@@ -1,14 +1,5 @@
 /****************************************************************************************/
 /* Global color codes:                                                                  */
-/* dark-purple:        #822b23                                                          */
-/* transparent-purple: #d1dbea                                                          */
-/*                                                                                      */
-/* light-purple1:      #2b4162                                                          */
-/* light-purple2:      #36517a                                                          */
-/*                                                                                      */
-/* medium-purple1:     #36517a                                                          */
-/* medium-purple1:     #2b4162                                                          */
-/* medium-purple2:     #1b2a40                                                          */
 /*                                                                                      */
 /* background:         #d1dbea                                                          */
 /* input fields:       #d1dbea                                                          */
@@ -69,6 +60,7 @@ QToolBar {
 	padding: 1;
 	margin: 0;
 	width: 70px;
+	float: right;
 }
 
 QToolBar>QToolButton {
