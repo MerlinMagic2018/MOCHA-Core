@@ -60,11 +60,10 @@ QToolBar {
 	padding: 1;
 	margin: 0;
 	width: 70px;
-	float: right;
 }
 
 QToolBar>QToolButton {
-	Alignment: left;
+	Alignment: right;
 	background-color: #05082D;
 	selection-background-color: transparent;
 	border: 0.5px solid #888;
