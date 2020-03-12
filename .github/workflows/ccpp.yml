@@ -15,14 +15,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: dependencies
-      run: sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libevent-dev -y && sudo apt install libssl1.0-dev -y && sudo add-apt-repository ppa:bitcoin/bitcoin && sudo apt update && apt-get install libdb4.8-dev libdb4.8++-dev -y
+      run: sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libevent-dev -y && sudo apt install libssl1.0-dev -y && sudo add-apt-repository ppa:bitcoin/bitcoin && sudo apt update && sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
     - name: autogen
-      run: ./autogen.sh
+      run: sudo ./autogen.sh
     - name: configure
-      run: ./configure --disable-test --disable-bench
+      run: sudo ./configure --disable-test --disable-bench
     - name: make
-      run: make
+      run: sudo make
     - name: make check
-      run: make check
+      run: sudo make check
     - name: make distcheck
-      run: make distcheck
+      run: sudo make distcheck
