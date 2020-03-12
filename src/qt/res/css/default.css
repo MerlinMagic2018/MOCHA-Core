@@ -20,7 +20,7 @@ WalletFrame {
 }
 
 QStatusBar {
-	background-color: #05082D;
+	background-color: white;
 }
 
 .QFrame {
