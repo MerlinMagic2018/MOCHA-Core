@@ -13,6 +13,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    - name: dependencies
+      run: apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libevent-dev -y && apt install libssl1.0-dev -y && add-apt-repository ppa:bitcoin/bitcoin && apt update && apt-get install libdb4.8-dev libdb4.8++-dev -y
     - name: autogen
       run: ./autogen.sh
     - name: configure
