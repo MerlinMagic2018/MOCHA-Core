@@ -22,7 +22,3 @@ jobs:
       run: sudo ./configure --disable-test --disable-bench
     - name: make
       run: sudo make
-    - name: make check
-      run: sudo make check
-    - name: make distcheck
-      run: sudo make distcheck
