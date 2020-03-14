@@ -6,7 +6,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "libzerocoin/Params.h"
+// #include "libzerocoin/Params.h"
 #include "chainparams.h"
 #include "random.h"
 #include "util.h"
@@ -79,25 +79,25 @@ static const Checkpoints::CCheckpointData dataRegtest = {
     0,
     0};
 
-libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params() const
-{
-    assert(this);
-    static CBigNum bnTrustedModulus;
-    bnTrustedModulus.SetDec(zerocoinModulus);
-    static libzerocoin::ZerocoinParams ZCParams = libzerocoin::ZerocoinParams(bnTrustedModulus);
+// libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params() const
+// {
+//     assert(this);
+//     static CBigNum bnTrustedModulus;
+//     bnTrustedModulus.SetDec(zerocoinModulus);
+//     static libzerocoin::ZerocoinParams ZCParams = libzerocoin::ZerocoinParams(bnTrustedModulus);
 
-    return &ZCParams;
-}
+//     return &ZCParams;
+// }
 
-libzerocoin::ZerocoinParams* CChainParams::OldZerocoin_Params() const
-{
-    assert(this);
-    static CBigNum bnTrustedModulus;
-    bnTrustedModulus.SetHex(zerocoinModulus);
-    static libzerocoin::ZerocoinParams ZCParams = libzerocoin::ZerocoinParams(bnTrustedModulus);
+// libzerocoin::ZerocoinParams* CChainParams::OldZerocoin_Params() const
+// {
+//     assert(this);
+//     static CBigNum bnTrustedModulus;
+//     bnTrustedModulus.SetHex(zerocoinModulus);
+//     static libzerocoin::ZerocoinParams ZCParams = libzerocoin::ZerocoinParams(bnTrustedModulus);
 
-    return &ZCParams;
-}
+//     return &ZCParams;
+// }
 
 class CMainParams : public CChainParams
 {
